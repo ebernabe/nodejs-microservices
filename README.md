@@ -1,0 +1,1 @@
+npx nodemon api/index.js
