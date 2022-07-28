@@ -9,10 +9,10 @@ module.exports = {
         secret: process.env.JWT_SECTRET || 'notsecret'
     },
     mysql: {
-        host: process.env.MYSQL_HOST || 'remotemysql.com',
-        user: process.env.MYSQL_USER || 'VgSURiRNVG',
-        password: process.env.MYSQL_PASS || '6oWngrOt5E',
-        database: process.env.MYSQL_DB || 'VgSURiRNVG',
+        host: process.env.MYSQL_HOST || '',
+        user: process.env.MYSQL_USER || '',
+        password: process.env.MYSQL_PASS || '',
+        database: process.env.MYSQL_DB || '',
     },
     mysqlService: {
         nost: process.env.MYSQL_SRV_HOST || 'localhost',
@@ -25,6 +25,6 @@ module.exports = {
     redis: {
         host: process.env.REDIS_HOST || 'redis-16697.c9.us-east-1-2.ec2.cloud.redislabs.com',
         port: process.env.REDIS_PORT || '16697',
-        password: process.env.REDIS_PASS || 'yvrExWSe4F6sLgcFoiN6atDrpCiJV4Uy'
+        password: process.env.REDIS_PASS || ''
     }
 }
