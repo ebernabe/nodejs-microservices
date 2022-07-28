@@ -1,4 +1,4 @@
-const nanoid = require('nanoid');
+var uuid = require('uuid');
 const error = require('../../../utils/error');
 
 const COLLECTION = 'post';
@@ -30,7 +30,7 @@ module.exports = function (injectedStore) {
 		}
 
 		if (!post.id) {
-			post.id = nanoid();
+			post.id = uuid.v4();
 		}
 
 		return Store.upsert(COLLECTION, post).then(() => post);
